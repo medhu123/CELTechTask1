@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Entrepreneurship Summit 2024</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Entrepreneurship Summit 2024</div>
+        <nav>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+        </nav>
+    </header>
+
+    <div class="sections">
+        <section class="section-signup">
+
+            <h1>Sign-Up</h1>
+
+            <div class="forms">
+                <div class="form">
+
+                        <label for="alphanumeric-input">Full Name</label>
+                        <input type="text" id="fullname" 
+                            class="textbox" 
+                            placeholder="John Doe" 
+                            maxlength="30"
+                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '')">
+
+
+                </div>
+
+                <div class="form">
+
+                        <label for="alphanumeric-input">Email</label>
+                        <input type="text" id="email" 
+                            class="textbox" 
+                            placeholder="abc@xyz.com"
+                            maxlength="30"
+                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9@.-]/g, '')">
+
+
+                </div>
+                
+                <div class="confirm-button", id="confirm-button">
+                    <button>Confirm</button>
+                </div>
+
+            </div>
+
+    
+        </section>
+    
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+    
+</body>
+</html>

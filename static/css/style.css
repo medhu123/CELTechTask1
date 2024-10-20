@@ -1,0 +1,174 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.819);
+    color: white;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+header div {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+nav {
+    list-style: none;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+nav a{
+    all:unset;
+    margin: 1rem;
+    padding : 0.5rem;
+    color:white;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+nav{
+    color:white;
+    text-decoration: none;
+    margin:0.5rem
+}
+
+nav a:hover{
+    border-radius: 0.5rem;
+    background-color: rgb(255, 114, 114);
+}
+
+.section{
+    margin: auto;
+    margin-top:3rem;
+    color: black;
+    width:90%;
+    border-radius: 1rem;
+    border:solid;
+}
+
+.section-signup{
+    margin: auto;
+    margin-top:3rem;
+    color: black;
+    width:50%;
+    border-radius: 1rem;
+    border:solid;
+    background-color: rgba(217, 185, 55, 0.5);
+}
+
+.section-final{
+    margin: auto;
+    margin-top:3rem;
+    color: black;
+    width:50%;
+    border-radius: 1rem;
+    border:solid;
+    background-color: rgba(187, 55, 217, 0.5);
+}
+
+.section:nth-child(1){
+    background-color: rgba(96, 217, 55,0.5);
+
+}
+
+.section:nth-child(2){
+    background-color: rgba(55, 93, 217, 0.5);
+    margin-bottom: 3rem;
+}
+
+h1{
+    color:black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+div{
+    color:white;
+
+}
+
+.cards{
+    display:flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+img{
+    border-radius:50%;
+    width:10rem;
+    height:10rem;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card h2, .card p{
+    margin:0.5rem;
+}
+
+.forms{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.form{
+    display:flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+#fullname, #email{
+    all:unset;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    width:15rem;
+}
+
+.confirm-button button{
+    all:unset;
+    margin: 1rem;
+    padding : 0.5rem;
+    color:white;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: solid;
+    border-color: black;
+}
+
+.confirm-button{
+    display: flex;
+    justify-content: end;
+    margin: 2rem;
+}
+
+.confirm-button button:hover{
+    background-color: rgb(255, 114, 114);
+}
+
+#thanks{
+    margin:auto
+}

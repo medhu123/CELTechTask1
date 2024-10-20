@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Entrepreneurship Summit 2024</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Entrepreneurship Summit 2024</div>
+        <nav>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+        </nav>
+    </header>
+
+    <div class="sections">
+        <section class="section-final">
+
+            <h1 id="thanks">Thanks for signing up!</h1>
+
+            <div class="forms">
+                <div class="form">
+
+                    <label for="alphanumeric-input">Full Name</label>
+                    <div id="final-fullname"></div>
+
+
+            </div>
+
+            <div class="form">
+
+                    <label for="alphanumeric-input">Email</label>
+                    <div id="final-email"></div>
+
+
+            </div>
+                
+            </div>
+
+    
+        </section>
+    
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="{{ url_for('static', filename='js/final.js') }}"></script>
+    
+</body>
+</html>

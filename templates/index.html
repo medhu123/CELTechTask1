@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Entrepreneurship Summit 2024</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Entrepreneurship Summit 2024</div>
+        <nav>
+                <li><a href="{{ url_for('signup') }}">Sign-Up</a></li>
+        </nav>
+    </header>
+
+    <div class="sections">
+        <section class="section">
+
+            <h1>Speakers</h1>
+    
+            <div class="cards">
+                <div></div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Speaker 1">
+                    <h2>Nikhil Kamath</h2>
+                    <p>Zerodha, Co-Founder</p>
+                </div>
+    
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Speaker 2">
+                    <h2>Deepinder Goyal</h2>
+                    <p>Zomato, CEO</p>
+                </div>
+    
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Speaker 3">
+                    <h2>Aadit Palicha</h2>
+                    <p>Zepto, Co-founder</p>
+                </div>
+                <div></div>
+            </div>
+    
+        </section>
+    
+        <section class="section">
+    
+            <h1>Schedule</h1>
+    
+            <div class="cards">
+                <div></div>
+                <div class="card">
+                    <h2>Venue</h2>
+                    <p>Bharat Mandapam</p>
+                </div>
+    
+                <div class="card">
+                    <h2>Date</h2>
+                    <p>24th Oct</p>
+                </div>
+    
+                <div class="card">
+                    <h2>Time</h2>
+                    <p>9PM onwards</p>
+                </div>
+                <div></div>
+            </div>
+    
+        </section>
+    </div>
+
+
+    
+</body>
+</html>
