@@ -28,7 +28,7 @@ def send(fullname,email):
   sender_email = "f20241009@pilani.bits-pilani.ac.in"
   server.login(sender_email,"ocxw uyzs bhdp xkzy")
   subject = "Ticket for Entrepreneurship Summit 2024"
-  message = f"Your ticket for the summit is {fullname.split()[0]}_2024.\nThanks for attending!\n\nThis email was generated as part of CEL Tech Task 1 by Medhansh Khandelwal."
+  message = f"Your ticket-id for the summit is {fullname.split()[0]}_2024.\nThanks for attending!\n\nThis email was generated as part of CEL Tech Task 1 by Medhansh Khandelwal."
   text = f"Subject: {subject}\n\n{message}"
   server.sendmail(sender_email, email, text)
   server.quit()
@@ -44,5 +44,5 @@ def send_ticket():
     return jsonify({"status": "done"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=2000)
 
